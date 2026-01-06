@@ -15,7 +15,7 @@ html, body {
 }
 
 .back {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   position: relative;
   background: url("/img/img8.webp") center center / cover no-repeat;
@@ -371,6 +371,10 @@ html, body {
 
   .content-header {
     position: relative;
+  }
+
+  .back {
+    background-position: top center;
   }
 
 }
