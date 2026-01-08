@@ -342,6 +342,7 @@ html, body {
 
   .logo {
     font-size: 20px;
+    padding: 0px 20px;
   }
 
   .badges {
@@ -351,15 +352,14 @@ html, body {
   .contact {
     padding: 8px 14px;
     font-size: 11px;
+    max-width: 250px;
   }
 
   .projects {
     grid-template-columns: 1fr;
   }
-}
 
-@media (max-width: 768px) {
-  .projects {
+   .projects {
     grid-template-columns: 1fr;
     backdrop-filter: none;
   }
@@ -377,4 +377,15 @@ html, body {
     background-position: top center;
   }
 
+  .about-popover:hover {
+    padding: 10px;
+    height: 100px;
+  }
+
+  .about-trigger:hover .about-popover {
+   padding: 10px 10px;
+  }
+  .about-popover .en {
+  display: none;
+}
 }
