@@ -69,7 +69,7 @@ export function Header() {
         
         <button className="text-[10px] md:text-[13px] tracking-widest font-medium text-text-soft hover:text-brand-gold transition-colors uppercase">
           <a
-            href='./public/CVfrontEnd.pdf'
+            href='/CVfrontEnd.pdf'
             target="_blank"
             rel="noopener noreferrer"
   
