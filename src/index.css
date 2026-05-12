@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+/* 1. SEUS DESIGN TOKENS (A paleta oficial da marca) */
+@theme {
+  /* Cores Principais */
+  --color-brand-blue: #0B6FBF;
+  --color-brand-cyan: #0FA3D9;
+  --color-brand-gold: #FFD966;
+  --color-brand-teal: #5FAF9A;
+  
+  /* Cores de Fundo e Texto */
+  --color-bg-main: #0f1117;
+  --color-text-soft: #cfefff;
+  --color-text-popover: #e6f4ff;
+
+  /* Cores dos Ícones/Badges */
+  --color-badge-1: #5b5370;
+  --color-badge-2: #57e6e6;
+  --color-badge-3: #feffb8;
+  --color-badge-4: #b294ff;
+
+  /* Fontes Customizadas */
+  --font-mars: "marsbold", sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
+  --font-bangers: "Bangers", system-ui;
+  --font-luckiest: "Luckiest Guy", system-ui;
+  --font-fredoka: "Fredoka", sans-serif;
+
+  /* Conectando as suas animações ao Tailwind */
+  --animate-fade-up: fadeUp 0.8s ease forwards;
+  --animate-gradient: gradient-pan 8s linear infinite;
+}
+
+/* 2. CONFIGURAÇÕES BASE (O Reset) */
+@layer base {
+  body {
+    @apply bg-bg-main text-white font-inter overflow-x-hidden;
+  }
+}
+
+/* 3. SUAS KEYFRAMES (Os movimentos) */
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4. SEUS EFEITOS ESPECIAIS (Classes CSS Nativas) */
+
+.text-gradient-animated {
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-blue),
+    var(--color-brand-cyan),
+    var(--color-brand-gold),
+    var(--color-brand-teal),
+    var(--color-brand-cyan),
+    var(--color-brand-blue)
+  );
+  background-size: 600% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: 'inter';
+  animation: gradient-pan 8s linear infinite, fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+.glass-card {
+  background: rgba(15, 17, 23, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(145, 165, 211, 0.25);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.underline-gradient::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-brand-cyan), var(--color-brand-gold));
+  transition: width 0.3s ease;
+}
+
+.underline-gradient:hover::after {
+  width: 100%;
+}
