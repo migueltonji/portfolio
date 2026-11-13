@@ -25,19 +25,4 @@ O projeto segue um fluxo de **Integração e Entrega Contínua (CI/CD)**. O vers
 
 A decisão arquitetural de utilizar componentes nativos (Iframes) em detrimento de uma API Restful customizada no backend foi tomada visando garantir a estabilidade a longo prazo, reduzir o tempo de carregamento da página e entregar a experiência original do player para o usuário.
 
-## 🚀 Como executar o projeto localmente
-
-Pré-requisitos: Ter o [Node.js](https://nodejs.org/en/) e o Git instalados na sua máquina.
-
-```bash
-# Clone este repositório
-$ git clone [https://github.com/migueltonji/portfolio.git](https://github.com/migueltonji/portfolio.git)
-
-# Acesse a pasta do projeto no terminal/cmd
-$ cd meu-portfolio
-
-# Instale as dependências
-$ npm install
-
-# Execute a aplicação em modo de desenvolvimento
-$ npm run dev
+## Link do Projeto: https://migueltonji.vercel.app/
