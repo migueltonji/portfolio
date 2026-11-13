@@ -10,12 +10,12 @@ const MEUS_PROJETOS = [
     stacks:['react-original', 'tailwindcss-original', 'typescript-plain', 'vitejs-plain', 'google-plain']
     // Se não passarmos a propriedade "stacks", ele simplesmente não renderiza o bloco, sem causar erros!
   },
-  {
+ {
     id: 2,
-    title: 'Card Profile Dinâmico',
-    description: 'Automação e personalização de perfis profissionais, com identificação de competências e sistema de cores customizáveis para reforço da identidade visual.',
-    link: 'https://card-migueltonji.vercel.app/',
-    stacks: ['html5-plain', 'css3-plain', 'javascript-plain'] // 👈 Adicionado aqui
+    title: 'Portal CEPROCAMP & CMS',
+    description: 'Foi realizado um portal institucional e painel administrativo (CMS) com gestão completa de notícias, CRUD embutido na lógica do administrador e catálogo de cursos.',
+    link: 'https://ceprocamp-nine.vercel.app/',
+    stacks: ['react-original', 'typescript-plain', 'tailwindcss-plain', 'nodejs-plain']
   },
  {
     id: 3,
